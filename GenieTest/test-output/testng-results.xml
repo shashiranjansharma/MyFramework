@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Photon Workflow Test Suite" duration-ms="197848" started-at="2017-06-22T16:21:19Z" finished-at="2017-06-22T16:24:37Z">
+    <groups>
+    </groups>
+    <test name="Workflow Tests" duration-ms="197848" started-at="2017-06-22T16:21:19Z" finished-at="2017-06-22T16:24:37Z">
+      <class name="com.the99tests.photon.tests.WorkflowTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.the99tests.photon.tests.WorkflowTest@a67c67e]" name="init" is-config="true" duration-ms="30354" started-at="2017-06-22T21:50:49Z" finished-at="2017-06-22T21:51:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="Add_Child_Step_1_Valid_Input()[pri:0, instance:com.the99tests.photon.tests.WorkflowTest@a67c67e]" name="Add_Child_Step_1_Valid_Input" duration-ms="60410" started-at="2017-06-22T21:51:20Z" finished-at="2017-06-22T21:52:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Child_Step_1_Valid_Input -->
+        <test-method status="PASS" signature="Add_Child_Step_2()[pri:0, instance:com.the99tests.photon.tests.WorkflowTest@a67c67e]" name="Add_Child_Step_2" duration-ms="76647" started-at="2017-06-22T21:52:20Z" finished-at="2017-06-22T21:53:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Child_Step_2 -->
+        <test-method status="PASS" signature="Add_Child_Step_3()[pri:0, instance:com.the99tests.photon.tests.WorkflowTest@a67c67e]" name="Add_Child_Step_3" duration-ms="13016" started-at="2017-06-22T21:53:37Z" finished-at="2017-06-22T21:53:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Child_Step_3 -->
+        <test-method status="PASS" signature="Add_Child_Step_4()[pri:0, instance:com.the99tests.photon.tests.WorkflowTest@a67c67e]" name="Add_Child_Step_4" duration-ms="16880" started-at="2017-06-22T21:53:50Z" finished-at="2017-06-22T21:54:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Child_Step_4 -->
+        <test-method status="PASS" signature="My_Lesson_To_Home()[pri:0, instance:com.the99tests.photon.tests.WorkflowTest@a67c67e]" name="My_Lesson_To_Home" duration-ms="29639" started-at="2017-06-22T21:54:07Z" finished-at="2017-06-22T21:54:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- My_Lesson_To_Home -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.the99tests.photon.tests.WorkflowTest@a67c67e]" name="close" is-config="true" duration-ms="1064" started-at="2017-06-22T21:54:41Z" finished-at="2017-06-22T21:54:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.the99tests.photon.tests.WorkflowTest -->
+    </test> <!-- Workflow Tests -->
+  </suite> <!-- Photon Workflow Test Suite -->
+</testng-results>
