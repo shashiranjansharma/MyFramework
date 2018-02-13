@@ -37,16 +37,30 @@ public class MyDriver {
 		FileInputStream config = new FileInputStream("Resource/config.properties");
 		property.load(config);
 		String myBrowser = property.getProperty("browser");
-		if(myBrowser.equals("chrome")){
+		String myOS = property.getProperty("platform");
+		if(myBrowser.equals("chrome") && myOS.equals("mac")){
 			System.setProperty("webdriver.chrome.driver", "Resource/chromeDriver");
 			driver = new ChromeDriver();
 		}
-		else
+		else if(myBrowser.equals("firefox") && myOS.equals("mac"))
 		{
 			System.setProperty("webdriver.gecko.driver", "Resource/geckodriver");
 			driver = new FirefoxDriver();
 		}
-		
+		else if(myBrowser.equals("firefox") && myOS.equals("windows"))
+		{
+			System.setProperty("webdriver.gecko.driver", "Resource/geckodriver.exe");
+			driver = new FirefoxDriver();
+		}
+		else if(myBrowser.equals("chrome") && myOS.equals("windows"))
+		{
+			System.setProperty("webdriver.gecko.driver", "Resource/chromeDriver.exe");
+			driver = new ChromeDriver();
+		}
+		else
+		{
+			System.out.println("Check the drivers in resource folder and update your cofig.properties wisely.");
+		}
 		driver.manage().window().fullscreen();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
