@@ -2,13 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
-  <groups>
-  <run>
-  <include name="sanity"></include>
-  </run>
-  </groups>
     <classes>
-      <class name="com.MyFramework.MyFramework.YoutTest"/>
+      <class name="com.myFramework.Tests.TestCases"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

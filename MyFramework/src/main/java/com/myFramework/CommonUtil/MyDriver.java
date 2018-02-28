@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -54,14 +55,14 @@ public class MyDriver {
 		}
 		else if(myBrowser.equals("chrome") && myOS.equals("windows"))
 		{
-			System.setProperty("webdriver.gecko.driver", "Resource/chromeDriver.exe");
+			System.setProperty("webdriver.chrome.driver", "Resource//chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else
 		{
 			System.out.println("Check the drivers in resource folder and update your cofig.properties wisely.");
 		}
-		driver.manage().window().fullscreen();
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
